@@ -12,7 +12,7 @@ app.set('lib', path.join(__dirname, 'lib'))
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use(bodyParser.urlencoded({ extended: true }))
+//app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
     res.render('home')
